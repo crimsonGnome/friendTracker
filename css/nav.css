@@ -1,0 +1,152 @@
+nav     {
+			float: left;
+			text-align: center;
+			z-index:999;           
+			position:fixed;
+			top:0;
+
+			width: 100%;
+            background:  #212121; 
+			background: -webkit-linear-gradient( rgb(0,0,0), #212121); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient( rgb(0,0,0),  #212121); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient( rgb(0,0,0), #212121); /* For Firefox 3.6 to 15 */
+			background: linear-gradient( rgb(0,0,0), #212121 );
+			 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+nav ul {
+        list-style-type: none;
+        margin-top: 15px;
+        padding: 0;    
+}
+
+nav ul li {
+    float: left;
+    overflow: hidden;
+
+}
+
+nav li a, .login {
+    display: inline-block;
+    color: rgb(248,247,246);
+    font-size: 1em;
+    text-align: center;
+    padding: 1.25em 1em;
+    margin:0;
+    margin-top: -10px;
+    text-decoration: none;
+}
+
+
+.login{
+
+                color: white;
+                 padding: 30px 30px;
+                margin-top: -10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                background: rgb(59,72,195);
+
+}
+.handle{
+	display:none;
+}
+
+
+@media screen and (max-width:700px){
+	.nav{
+		display:none;
+	}
+	.show {
+		display:block;
+	}
+	nav ul li{
+		width: 100%;
+		text-align: left;
+		padding-left: 1em;
+	}
+	nav ul li a {
+		width: 100%;
+		font-size: 1.25em;
+		text-align: left;
+		margin: 0;
+
+	}
+	.handle{
+		background-color: linear-gradient( rgb(0,0,0), #212121 );
+		width: 100%;
+		padding: .8em 1em .3em 1em;
+		text-align: left;
+		font-size: 1.25em;
+		display: inline-block;
+		margin: 0;
+	}
+
+	.removeNav{
+		background-color: linear-gradient( rgb(0,0,0), #212121 );
+		width: 100%;
+		padding: .8em 1em .3em 1em;
+		text-align: left;
+		font-size: 1.25em;
+		display: inline-block;
+		margin: 0;
+	}
+	.bar1, .bar2, .bar3 {
+		width: 1.5em;
+		height: .1em;
+		background-color: #999;
+		margin: 4px 0;
+		transition: 0.4s;
+	}
+}
+
+
+
+@media screen and (min-width: 700px){
+	nav li a:hover, .dropdown:hover .login {
+	    background-color:#2d2d2d;
+	    margin-bottom: -10px;
+
+	}
+	.nav{
+		display:block;
+	}
+
+
+	nav li.dropdown {
+	    display: inline-block;
+	    margin-left: 0px;
+
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+
+	  }
+
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	}
+
+	nav .dropdown-content a:hover {background-color: #f1f1f1;
+	color:rgb(77,193,223);}
+
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+
+	.login_spacing{
+	margin-left: 0px;
+	}
+}
+

@@ -1,0 +1,74 @@
+<?php
+	session_start();
+	Include "Connection.php";
+	$conn= connect();
+?>
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign Up</title>
+</head>
+<header>
+	
+<nav>
+
+	<ul class="nav">
+		<li><a href="login.html">Login Page</a></li>
+	</ul>
+	<ul class="handle">
+		<li>
+			<div class="bar1"></div>
+			<div class="bar1"></div>
+			<div class="bar1"></div>
+		</li>
+	</ul>
+
+
+
+
+</nav>
+</header>
+
+
+<body>
+	<div class="background_signup">
+		<div class="lastLoc_box">
+			<H3 class="title">Sign UP</H3>
+			<hr>
+			<?php echo"$mes";?>
+			<form action = "signup.php" method = "post">
+				<div class="container_signUp">
+					<div class="info_signUp">
+						Your Super Hero/villain Name: <input required type ="text" name ="username" placeholder="username">
+					</div><br>
+					<div class="info_signUp">
+						What your mom calls you:<input required type ="text" name ="first" placeholder="first-name">
+					</div><br>
+					<div class="info_signUp">
+						What your army buddies call you:<input required type ="text" name ="last" placeholder="last-name">
+					</div><br>
+					<div class="info_signUp">
+						 Something easy to remember, but hard to guess:<input required type ="password" name="password" placeholder="Password">
+					</div><br>
+					<div class="info_signUp">
+						Type it again. Think of it as a test:<input required type ="password" placeholder ="Re-enter" name="password2">
+					</div><br>
+					<div class="info_signUp Submit">
+						<input type = "submit" value = "Submit">
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+<footer></footer>
+
+
+</body>
+<script type="text/javascript" src="script.js"></script>	
+</html>

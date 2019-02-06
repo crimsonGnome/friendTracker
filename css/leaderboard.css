@@ -1,0 +1,75 @@
+table{
+	width: 98%;	
+	background:none;
+	font-size: 2em;
+	color: #999;
+	position: relative;
+
+	align-content: center;
+	margin-left: 1%;
+	margin-top: 3em;
+	background-color:#191e1e;
+	opacity: .8
+}
+
+th{
+	text-align: left;
+
+
+}
+
+
+table, th, td {
+	border: 1px solid #032c30;
+	border-collapse: collapse;
+	size:.7em;
+}
+td{
+	color: white;
+}
+html, body {
+
+	padding:0;
+	margin: 0; 
+	width: 100%;
+	height: 100%;
+	color:white;
+	size: 16px;
+	text-shadow: 4px 4px 16px rgb(0,0,0);
+	display: inline;
+
+}
+
+head{
+	margin: 0;
+	padding: 0;
+
+}
+a{
+	text-decoration: none;
+}
+
+
+footer{
+	background:  #212121; 
+	background: gradient( rgb(0,0,0), #212121); /* For Safari 5.1 to 6.0 */
+	z-index: 99;
+	width: 100%;
+	position: fixed;
+	bottom:0;
+	height: 2vh;
+
+}
+.background{	
+	position: absolute;
+	background-image:linear-gradient( rgba(0,0,0,1.5), rgba(0,0,0,.5) ), url(img/la.png);
+	left:0;
+	right:0;
+
+	width: 100%;
+	background size: cover;
+	background-repeat: repeat;
+    background-position: center;
+	height:100%;
+	align-content: center;
+}

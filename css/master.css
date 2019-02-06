@@ -1,0 +1,101 @@
+
+html, body {
+	padding:0;
+	margin: 0; 
+	width: 100%;
+	height: 100%;
+	color:white;
+	size: 20px;
+	text-shadow: 4px 4px 16px rgb(0,0,0);
+	display: inline;
+
+}
+
+head{
+	margin: 0;
+	padding: 0;
+
+}
+
+
+
+footer{
+	background:  #212121; 
+	background: gradient( rgb(0,0,0), #212121); /* For Safari 5.1 to 6.0 */
+	z-index: 99;
+	width: 100%;
+	height: 50px;
+
+}
+.background{	
+	position: absolute;
+	background-image:linear-gradient( rgba(0,0,0,1.5), rgba(0,0,0,.5) ), url(img/la.png);
+	left:0;
+	height: auto;
+	padding-bottom: auto;
+	width: 100%;
+	background size: cover;
+	background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+	height:auto;
+}
+
+.lastLoc_box{
+	position: relative;
+	width: 60%;
+	height: auto;
+	border: #212121 solid .2em;
+	top: 100px;
+	left:20%;
+	border-radius: 5px;
+	margin-bottom: 100px;
+}
+
+h2{
+
+	font-weight: bold;
+	font-size: 2.5em;
+	margin: 0;
+	padding:.5em;
+
+}
+.rank_currentlocation h1{
+	font-size: 3em;
+	margin: 0;
+	padding:.5em;
+	display: inline;
+}
+.rank_currentlocation{
+	display: inline-block;
+	position: relative;
+	size: 2.5em;
+	display: inline;
+
+}
+
+.rank_currentlocation h2{
+	padding-right: 20%;
+
+}
+.header{
+	text-align: center;
+	width: 100%;
+
+}
+p{
+	display: inline;
+
+}
+.img_container_current_location{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+.split{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	overflow: hidden; 
+}

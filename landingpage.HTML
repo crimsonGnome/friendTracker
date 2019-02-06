@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Where's Robet</title>
+	<link rel="stylesheet" href="css/location.css">
+</head>
+<header>
+	<nav></nav>
+</header>
+<body>
+	<div class="img_container">
+		<div class= "split signUpImg">
+			<h1><a class= "login" href="signup.html">Sign Up</a></h1>
+		</div>
+		<div class="split loginInImg">
+			<h1><a class= "login" href="login.html"> Login In</a></li></h1>
+		</div>
+	</div>
+
+
+<footer></footer>
+</body>
+<script type="text/javascript">
+	const left = document.querySelector(".signUpImg");
+	const right = document.querySelector(".loginInImg");
+	const container = document.querySelector(".img_container");
+	
+	left.addEventListener("mouseenter", ()=>{
+		container.classList.add("hover-signUpImg");
+	});
+	
+	left.addEventListener("mouseleave", ()=> {
+		container.classList.remove("hover-signUpImg");
+	});
+
+	right.addEventListener("mouseenter", ()=>{
+		container.classList.add("hover-loginInImg");
+	});
+
+	right.addEventListener("mouseleave", ()=> {
+		container.classList.remove("hover-loginInImg")
+	});
+
+
+</script>
+
+</html>

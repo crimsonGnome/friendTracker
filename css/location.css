@@ -1,0 +1,152 @@
+:root{
+	--container-bg-color: rgba(43, 43, 43, 0.8);
+	--hover-width:75%;
+	--other-width:25%;
+	--speed:700ms;
+
+
+
+}
+html, body {
+	padding:0;
+	margin: 0; 
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+head{
+	margin: 0;
+	padding: 0;
+
+}
+
+.img_container{
+	position: relative;
+	width: 100%;
+	min-height:100vh;
+	overflow: hidden;
+	background-color: var(--container-bg-color);
+
+}
+.split.signUpImg{
+	display: inline-block;
+	background-image: linear-gradient( rgba(0,0,0,1.5), rgba(0,0,0,.5) ), url(img/binarycode.jpg);
+	left:0;
+	bottom:0;
+	min-height: 100vh;
+	background size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+
+
+}
+.split.loginInImg{
+	display: inline-block;
+	background-image: linear-gradient( rgba(0,0,0,1.5), rgba(0,0,0,.5) ), url(img/R_landing.jpg);
+	min-height: 100vh;
+	bottom:0;
+	width:50%;
+	right:0;
+	background size:cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+ .split.loginInImg, .split.signUpImg, .hover-signUpImg .loginInImg:before, .hover-loginInImg .signUpImg:before {
+ 	transition: var(--speed) all ease-in-out;
+}
+.hover-signUpImg .signUpImg{
+	width:var(--hover-width);
+}
+.hover-signUpImg .loginInImg{
+	width:var(--other-width);
+	background-image: linear-gradient( rgba(0,0,0,1.5), rgba(0,0,0,.6) ), url(img/R_landing.jpg);
+	
+}
+.hover-signUpImg .loginInImg:before{
+	z-index: 2;
+	background-image: linear-gradient( rgba(0,0,0,1.5), rgba(0,0,0,.5) ), url(img/R_landing.jpg);;
+}
+
+
+
+.hover-loginInImg .loginInImg{
+	width:var(--hover-width);
+}
+.hover-loginInImg .signUpImg{
+	width:var(--other-width);
+	background-image: linear-gradient( rgba(0,0,0,1.5), rgba(0,0,0,.6) ), url(img/binarycode.jpg);
+
+}
+.hover-loginInImg .signUpImg:before{
+	background-image: linear-gradient( rgba(0,0,0,1.5), rgba(0,0,0,.5) ), url(img/binarycode.jpg);
+	z-index: 2;
+}
+.login{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top:40%;
+	height: 2.5rem;
+	background-color: none;
+	padding-top: 1rem;
+	width:15rem;
+	border:black solid;
+	border-radius: .1rem;
+	transform: translateX(-50%);
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+a.login {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.login:hover{
+	background-color: none;
+	border-color:white solid; 
+	transition: .3s;
+	border:1px solid;
+
+}
+a.login:hover{
+
+	transition: .3s;
+}
+
+.split{
+	position: absolute;
+	width: 50%;
+	min-height: 100vh;
+	height: 100%;
+	
+
+}
+
+
+
+nav{
+	background:  #212121; 
+	background: -webkit-linear-gradient( rgb(0,0,0), #212121); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient( rgb(0,0,0),  #212121); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient( rgb(0,0,0), #212121); /* For Firefox 3.6 to 15 */
+	background: linear-gradient( rgb(0,0,0), #212121 )
+	height: 10%;
+	width: 100%;
+	z-index: 3;
+}
+footer{
+	 background: linear-gradient(#212121, rgb(0,0,0)); /* For Safari 5.1 to 6.0 */
+	z-index: 99;
+	width: 100%;
+	position: fixed;
+	bottom:0;
+	height: 5%;
+
+}
